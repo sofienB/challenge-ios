@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25E2741A260685F300B3BC60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E27419260685F300B3BC60 /* AppDelegate.swift */; };
-		25E2741C260685F300B3BC60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2741B260685F300B3BC60 /* SceneDelegate.swift */; };
 		25E2741E260685F300B3BC60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2741D260685F300B3BC60 /* ViewController.swift */; };
-		25E27421260685F300B3BC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E2741F260685F300B3BC60 /* Main.storyboard */; };
 		25E27424260685F300B3BC60 /* BankApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */; };
 		25E27426260685F500B3BC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E27425260685F500B3BC60 /* Assets.xcassets */; };
 		25E27429260685F500B3BC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E27427260685F500B3BC60 /* LaunchScreen.storyboard */; };
@@ -38,9 +36,7 @@
 /* Begin PBXFileReference section */
 		25E27416260685F300B3BC60 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E27419260685F300B3BC60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25E2741B260685F300B3BC60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		25E2741D260685F300B3BC60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25E27420260685F300B3BC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E27423260685F300B3BC60 /* BankApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankApp.xcdatamodel; sourceTree = "<group>"; };
 		25E27425260685F500B3BC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E27428260685F500B3BC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,14 +97,8 @@
 		25E27418260685F300B3BC60 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
-				25E27419260685F300B3BC60 /* AppDelegate.swift */,
-				25E2741B260685F300B3BC60 /* SceneDelegate.swift */,
+				25E27455260687BB00B3BC60 /* App */,
 				25E2741D260685F300B3BC60 /* ViewController.swift */,
-				25E2741F260685F300B3BC60 /* Main.storyboard */,
-				25E27425260685F500B3BC60 /* Assets.xcassets */,
-				25E27427260685F500B3BC60 /* LaunchScreen.storyboard */,
-				25E2742A260685F500B3BC60 /* Info.plist */,
-				25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */,
 			);
 			path = BankApp;
 			sourceTree = "<group>";
@@ -129,6 +119,18 @@
 				25E27440260685F500B3BC60 /* Info.plist */,
 			);
 			path = BankAppUITests;
+			sourceTree = "<group>";
+		};
+		25E27455260687BB00B3BC60 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25E27419260685F300B3BC60 /* AppDelegate.swift */,
+				25E2742A260685F500B3BC60 /* Info.plist */,
+				25E27425260685F500B3BC60 /* Assets.xcassets */,
+				25E27427260685F500B3BC60 /* LaunchScreen.storyboard */,
+				25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +238,6 @@
 			files = (
 				25E27429260685F500B3BC60 /* LaunchScreen.storyboard in Resources */,
 				25E27426260685F500B3BC60 /* Assets.xcassets in Resources */,
-				25E27421260685F300B3BC60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +265,6 @@
 				25E2741E260685F300B3BC60 /* ViewController.swift in Sources */,
 				25E27424260685F300B3BC60 /* BankApp.xcdatamodeld in Sources */,
 				25E2741A260685F300B3BC60 /* AppDelegate.swift in Sources */,
-				25E2741C260685F300B3BC60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25E2741F260685F300B3BC60 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25E27420260685F300B3BC60 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25E27427260685F500B3BC60 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
-				INFOPLIST_FILE = BankApp/Info.plist;
+				INFOPLIST_FILE = BankApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
-				INFOPLIST_FILE = BankApp/Info.plist;
+				INFOPLIST_FILE = BankApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
