@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25717E372607A8B1005A67C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E362607A8B1005A67C2 /* NetworkManager.swift */; };
+		25717E442607A913005A67C2 /* BankEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E432607A913005A67C2 /* BankEndPoint.swift */; };
+		25717E4A2607A95A005A67C2 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E492607A95A005A67C2 /* Bank.swift */; };
+		25717E522607A964005A67C2 /* BankGlobalGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E512607A964005A67C2 /* BankGlobalGroup.swift */; };
+		25717E572607A96D005A67C2 /* CountryBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E562607A96D005A67C2 /* CountryBank.swift */; };
+		25717E5C2607A978005A67C2 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E5B2607A978005A67C2 /* ResponseData.swift */; };
+		25717E612607ABA7005A67C2 /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E602607ABA7005A67C2 /* NetworkingTest.swift */; };
+		25717E6A2607AF8C005A67C2 /* BanksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E692607AF8B005A67C2 /* BanksViewModel.swift */; };
+		25717E6F2607B01F005A67C2 /* DetailBankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E6E2607B01F005A67C2 /* DetailBankViewModel.swift */; };
 		25E2741A260685F300B3BC60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E27419260685F300B3BC60 /* AppDelegate.swift */; };
 		25E2741E260685F300B3BC60 /* BanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2741D260685F300B3BC60 /* BanksViewController.swift */; };
 		25E27424260685F300B3BC60 /* BankApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */; };
@@ -38,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25717E362607A8B1005A67C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		25717E432607A913005A67C2 /* BankEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankEndPoint.swift; sourceTree = "<group>"; };
+		25717E492607A95A005A67C2 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		25717E512607A964005A67C2 /* BankGlobalGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankGlobalGroup.swift; sourceTree = "<group>"; };
+		25717E562607A96D005A67C2 /* CountryBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryBank.swift; sourceTree = "<group>"; };
+		25717E5B2607A978005A67C2 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		25717E602607ABA7005A67C2 /* NetworkingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
+		25717E692607AF8B005A67C2 /* BanksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksViewModel.swift; sourceTree = "<group>"; };
+		25717E6E2607B01F005A67C2 /* DetailBankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankViewModel.swift; sourceTree = "<group>"; };
 		25E27416260685F300B3BC60 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E27419260685F300B3BC60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25E2741D260685F300B3BC60 /* BanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +100,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25717E352607A89B005A67C2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25717E3E2607A8E0005A67C2 /* EndPoint */,
+				25717E3F2607A8E6005A67C2 /* Manager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		25717E3E2607A8E0005A67C2 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				25717E432607A913005A67C2 /* BankEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		25717E3F2607A8E6005A67C2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				25717E362607A8B1005A67C2 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		25717E482607A94D005A67C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25717E492607A95A005A67C2 /* Bank.swift */,
+				25717E512607A964005A67C2 /* BankGlobalGroup.swift */,
+				25717E562607A96D005A67C2 /* CountryBank.swift */,
+				25717E5B2607A978005A67C2 /* ResponseData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25717E652607AF66005A67C2 /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				25E2741D260685F300B3BC60 /* BanksViewController.swift */,
+				25717E692607AF8B005A67C2 /* BanksViewModel.swift */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
 		25E2740D260685F300B3BC60 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +152,7 @@
 				25E27432260685F500B3BC60 /* BankAppTests */,
 				25E2743D260685F500B3BC60 /* BankAppUITests */,
 				25E27417260685F300B3BC60 /* Products */,
+				F15BC700F2528CD2AB090830 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +169,12 @@
 		25E27418260685F300B3BC60 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
-				25E274702606932800B3BC60 /* DetailBank */,
-				25E2746226068B7600B3BC60 /* Coordinator */,
 				25E27455260687BB00B3BC60 /* App */,
-				25E2741D260685F300B3BC60 /* BanksViewController.swift */,
+				25717E352607A89B005A67C2 /* Networking */,
+				25717E482607A94D005A67C2 /* Model */,
+				25E2746226068B7600B3BC60 /* Coordinator */,
+				25E274702606932800B3BC60 /* DetailBank */,
+				25717E652607AF66005A67C2 /* Banks */,
 			);
 			path = BankApp;
 			sourceTree = "<group>";
@@ -118,6 +184,7 @@
 			children = (
 				25E27433260685F500B3BC60 /* BankAppTests.swift */,
 				25E27435260685F500B3BC60 /* Info.plist */,
+				25717E602607ABA7005A67C2 /* NetworkingTest.swift */,
 			);
 			path = BankAppTests;
 			sourceTree = "<group>";
@@ -157,8 +224,16 @@
 			children = (
 				25E274712606933600B3BC60 /* DetailBankCoordinator.swift */,
 				25E274792606934F00B3BC60 /* DetailBankViewController.swift */,
+				25717E6E2607B01F005A67C2 /* DetailBankViewModel.swift */,
 			);
 			path = DetailBank;
+			sourceTree = "<group>";
+		};
+		F15BC700F2528CD2AB090830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +369,16 @@
 				25E2741E260685F300B3BC60 /* BanksViewController.swift in Sources */,
 				25E27424260685F300B3BC60 /* BankApp.xcdatamodeld in Sources */,
 				25E2746C26068BB300B3BC60 /* MainCoordinator.swift in Sources */,
+				25717E372607A8B1005A67C2 /* NetworkManager.swift in Sources */,
+				25717E522607A964005A67C2 /* BankGlobalGroup.swift in Sources */,
+				25717E6A2607AF8C005A67C2 /* BanksViewModel.swift in Sources */,
+				25717E5C2607A978005A67C2 /* ResponseData.swift in Sources */,
 				25E2741A260685F300B3BC60 /* AppDelegate.swift in Sources */,
 				25E2747A2606934F00B3BC60 /* DetailBankViewController.swift in Sources */,
+				25717E6F2607B01F005A67C2 /* DetailBankViewModel.swift in Sources */,
+				25717E572607A96D005A67C2 /* CountryBank.swift in Sources */,
+				25717E4A2607A95A005A67C2 /* Bank.swift in Sources */,
+				25717E442607A913005A67C2 /* BankEndPoint.swift in Sources */,
 				25E274722606933600B3BC60 /* DetailBankCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25E27434260685F500B3BC60 /* BankAppTests.swift in Sources */,
+				25717E612607ABA7005A67C2 /* NetworkingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
