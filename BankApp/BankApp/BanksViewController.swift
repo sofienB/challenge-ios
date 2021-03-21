@@ -7,15 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BanksViewController: UIViewController {
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        view.backgroundColor = .yellow
+        setUpView()
     }
 
-
+    private func setUpView() {
+        self.view.backgroundColor = .yellow
+    }
 }
 
