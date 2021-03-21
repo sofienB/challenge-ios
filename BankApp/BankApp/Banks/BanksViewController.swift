@@ -10,10 +10,14 @@ import UIKit
 class BanksViewController: UIViewController {
     weak var coordinator: MainCoordinator?
 
+    var collectionView: UICollectionView!
+    var banksViewModel: BanksViewModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpView()
+        banksViewModel = BanksViewModel(viewDelegate: self, coordinator: coordinator!)
     }
 
     private func setUpView() {
@@ -21,3 +25,9 @@ class BanksViewController: UIViewController {
     }
 }
 
+
+extension BanksViewController:BanksViewModelViewDelegate {
+//    func didUpdate() {
+//
+//    }
+}

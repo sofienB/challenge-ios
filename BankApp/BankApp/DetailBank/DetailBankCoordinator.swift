@@ -18,8 +18,8 @@ class DetailBankCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = DetailBankViewController()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        let detailBanckVC = DetailBankViewController()
+        detailBanckVC.coordinator = self
+        navigationController.pushViewController(detailBanckVC, animated: true)
     }
 }
