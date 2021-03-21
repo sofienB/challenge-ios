@@ -38,6 +38,12 @@ class BALocationTests: XCTestCase {
         XCTAssertNil(location)
     }
 
+    func testFormatCountry() throws {
+        let england = BALocation.getCountry(from: "en".uppercased())
+        
+        XCTAssertEqual(england, "England")
+    }
+
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

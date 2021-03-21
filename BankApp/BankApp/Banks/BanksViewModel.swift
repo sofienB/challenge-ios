@@ -35,6 +35,7 @@ class BanksViewModel {
                 print(error.debugDescription)
             } else {
                 self.banks = banks
+                self.viewDelegate?.didUpdate?()
                 // Save into CoreData
             }
         }

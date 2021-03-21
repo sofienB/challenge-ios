@@ -33,27 +33,27 @@ struct BALocation {
     
     // Country from .plist file
     static func getCountry(from countryCode: String) -> String? {
-        func getPlist(withName name: String) -> [String:String]?
-        {
-            var config: [String: Any]?
-            if let infoPlistPath = Bundle.main.url(forResource: "Countrys", withExtension: "plist") {
-                do {
-                    let infoPlistData = try Data(contentsOf: infoPlistPath)
-                    
-                    if let dict = try PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [String: Any] {
-                        config = dict
-                    }
-                } catch {
-                    print(error)
-                }
-            }
-            return config as? [String:String]
-        }
-        let country = getPlist(withName: "Countrys")?.filter({ (key, value) -> Bool in
+        let country = BALocation().getPlist(withName: "Countries")?.filter({ (key, value) -> Bool in
             key == countryCode
         })
 
         return country?[countryCode]
+    }
+    
+    private func getPlist(withName name: String) -> [String:String]? {
+        var config: [String: Any]?
+        if let infoPlistPath = Bundle.main.url(forResource: name, withExtension: "plist") {
+            do {
+                let infoPlistData = try Data(contentsOf: infoPlistPath)
+                
+                if let dict = try PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [String: Any] {
+                    config = dict
+                }
+            } catch {
+                print(error)
+            }
+        }
+        return config as? [String:String]
     }
 }
 
