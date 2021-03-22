@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Bank" representedClassName=".Bank" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="logo_url" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="banks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BankGlobalGroup" inverseName="banks" inverseEntity="BankGlobalGroup"/>
+    </entity>
+    <entity name="BankGlobalGroup" representedClassName=".BankGlobalGroup" syncable="YES">
+        <attribute name="logo_url" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="banks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bank" inverseName="banks" inverseEntity="Bank"/>
+        <relationship name="parent_banks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CountryBank" inverseName="parent_banks" inverseEntity="CountryBank"/>
+    </entity>
+    <entity name="CountryBank" representedClassName=".CountryBank" syncable="YES">
+        <attribute name="country_code" optional="YES" attributeType="String"/>
+        <relationship name="parent_banks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BankGlobalGroup" inverseName="parent_banks" inverseEntity="BankGlobalGroup"/>
+        <relationship name="resources" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ResponseData" inverseName="resources" inverseEntity="ResponseData"/>
+    </entity>
+    <entity name="ImageEntity" representedClassName=".ImageEntity" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+    </entity>
+    <entity name="ResponseData" representedClassName=".ResponseData" syncable="YES">
+        <relationship name="resources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CountryBank" inverseName="resources" inverseEntity="CountryBank"/>
+    </entity>
+    <elements>
+        <element name="Bank" positionX="36.9697265625" positionY="445.0492858886719" width="128" height="89"/>
+        <element name="BankGlobalGroup" positionX="42.79638671875" positionY="309.1461791992188" width="128" height="89"/>
+        <element name="CountryBank" positionX="50.2821044921875" positionY="138.1995849609375" width="128" height="74"/>
+        <element name="ResponseData" positionX="45.9652099609375" positionY="9.031890869140625" width="128" height="44"/>
+        <element name="ImageEntity" positionX="90" positionY="207" width="128" height="59"/>
+    </elements>
+</model>

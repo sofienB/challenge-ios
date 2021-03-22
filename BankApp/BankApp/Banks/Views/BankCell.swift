@@ -26,14 +26,14 @@ class BankCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with bank: Bank) {
+    func configure(with bank: BankModel) {
         bankView.name.text = bank.name
         bankView.bankID.text = String(bank.id!)
         bankView.localName.text = bank.subName
         
         guard let url = URL(string: bank.logo_url!) else { return }
         
-        bankView.imageView.load(url: url)
+        bankView.imageView.load(url: url, withPlaceholder: "bank-placeholder")
         bankView.imageView.contentMode = .scaleAspectFit
     }
 }

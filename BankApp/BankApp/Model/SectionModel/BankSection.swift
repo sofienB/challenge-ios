@@ -10,9 +10,9 @@ import Foundation
 class BankSection: Hashable {
     
     var sectionTitle: String = "Banks"
-    var banks: [Bank]?
+    var banks: [BankModel]?
     
-    init(banks: [Bank], countryCode:String) {
+    init(banks: [BankModel], countryCode:String) {
         let country: String = BALocation.getCountry(from: countryCode) ?? countryCode
 
         self.banks = banks

@@ -114,7 +114,7 @@ extension BanksViewController:UICollectionViewDelegate {
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section<AnyHashable, [AnyHashable]>, AnyHashable>(collectionView:
         collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
-            if let bank = item as? Bank {
+            if let bank = item as? BankModel {
                 guard let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: BankCell.identifier,
                     for: indexPath) as? BankCell else { return UICollectionViewCell() }
@@ -152,36 +152,33 @@ extension BanksViewController:UICollectionViewDelegate {
         
         // use local from other way
         let currentLocation = UserDefaults.standard.string(forKey: "bank.app.current.location") ?? "FR"
-        guard let banks = self.banksViewModel.banks else {
-            return
-        }
+        
+        guard let bankVModel = self.banksViewModel, let banks = bankVModel.banks else { return }
         
         // for each countries we have banks.
         for bank in banks {
-            var groupCountryBanks = [Bank]()
-
+            var groupCountryBanks = [BankModel]()
+            groupCountryBanks = getBanks(bank: Array(bank.parent_banks!))
+            let bankSection = BankSection(banks: groupCountryBanks, countryCode: bank.country_code!)
+            
+            // Add Current Language in top.
             if bank.country_code!.uppercased() == currentLocation.uppercased() {
-                groupCountryBanks = getBanks(bank: bank.parent_banks!)
-                sections.insert(Section(headerItem: BankSection(banks: groupCountryBanks, countryCode: bank.country_code!),
-                                                    sectionItems: groupCountryBanks), at: 0)
+                sections.insert(Section(headerItem: bankSection, sectionItems: groupCountryBanks), at: 0)
             } else {
-                groupCountryBanks = getBanks(bank: bank.parent_banks!)
-                sections.append(Section(headerItem: BankSection(banks: groupCountryBanks, countryCode: bank.country_code!),
-                                            sectionItems: groupCountryBanks))
+                sections.append(Section(headerItem: bankSection, sectionItems: groupCountryBanks))
             }
         }
         add(items: sections)
     }
     
-    func getBanks(bank:[BankGlobalGroup]) -> [Bank] {
-        var banks = [Bank]()
+    func getBanks(bank:[BankGlobalGroup]) -> [BankModel] {
+        var banks = [BankModel]()
         // for each banks we have sub banks.
         for currentParentBank in bank {
                 let currentName = currentParentBank.name
                 let currentLogo = currentParentBank.logo_url
                 for currentBank in currentParentBank.banks! {
-                    banks.append(Bank(id: currentBank.id,
-                                      name: currentName,
+                    banks.append(BankModel(id: Int(currentBank.id), name: currentName,
                                       logo_url: currentBank.logo_url ?? currentLogo,
                                       subName: (currentBank.name ?? currentName)!))
                 }

@@ -23,12 +23,15 @@
 		2507012E2607DCEE00639D6D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507012D2607DCEE00639D6D /* HeaderView.swift */; };
 		250701342607DD0F00639D6D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250701322607DD0F00639D6D /* HeaderView.xib */; };
 		250701352607DD0F00639D6D /* BankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250701332607DD0F00639D6D /* BankView.xib */; };
+		250701452608027700639D6D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250701442608027700639D6D /* PersistenceService.swift */; };
+		250702932608ADE500639D6D /* CountryBank+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507028F2608ADE500639D6D /* CountryBank+CoreDataClass.swift */; };
+		250702942608ADE500639D6D /* Bank+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250702902608ADE500639D6D /* Bank+CoreDataClass.swift */; };
+		250702952608ADE500639D6D /* ResponseData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250702912608ADE500639D6D /* ResponseData+CoreDataClass.swift */; };
+		250702962608ADE500639D6D /* BankGlobalGroup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250702922608ADE500639D6D /* BankGlobalGroup+CoreDataClass.swift */; };
+		250702A9260905C300639D6D /* ImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250702A8260905C300639D6D /* ImageEntity+CoreDataClass.swift */; };
 		25717E372607A8B1005A67C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E362607A8B1005A67C2 /* NetworkManager.swift */; };
 		25717E442607A913005A67C2 /* BankEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E432607A913005A67C2 /* BankEndPoint.swift */; };
 		25717E4A2607A95A005A67C2 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E492607A95A005A67C2 /* Bank.swift */; };
-		25717E522607A964005A67C2 /* BankGlobalGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E512607A964005A67C2 /* BankGlobalGroup.swift */; };
-		25717E572607A96D005A67C2 /* CountryBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E562607A96D005A67C2 /* CountryBank.swift */; };
-		25717E5C2607A978005A67C2 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E5B2607A978005A67C2 /* ResponseData.swift */; };
 		25717E612607ABA7005A67C2 /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E602607ABA7005A67C2 /* NetworkingTest.swift */; };
 		25717E6A2607AF8C005A67C2 /* BanksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E692607AF8B005A67C2 /* BanksViewModel.swift */; };
 		25717E6F2607B01F005A67C2 /* DetailBankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25717E6E2607B01F005A67C2 /* DetailBankViewModel.swift */; };
@@ -79,12 +82,15 @@
 		2507012D2607DCEE00639D6D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		250701322607DD0F00639D6D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		250701332607DD0F00639D6D /* BankView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankView.xib; sourceTree = "<group>"; };
+		250701442608027700639D6D /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		2507028F2608ADE500639D6D /* CountryBank+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryBank+CoreDataClass.swift"; sourceTree = "<group>"; };
+		250702902608ADE500639D6D /* Bank+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bank+CoreDataClass.swift"; sourceTree = "<group>"; };
+		250702912608ADE500639D6D /* ResponseData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		250702922608ADE500639D6D /* BankGlobalGroup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BankGlobalGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		250702A8260905C300639D6D /* ImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		25717E362607A8B1005A67C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		25717E432607A913005A67C2 /* BankEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankEndPoint.swift; sourceTree = "<group>"; };
 		25717E492607A95A005A67C2 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
-		25717E512607A964005A67C2 /* BankGlobalGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankGlobalGroup.swift; sourceTree = "<group>"; };
-		25717E562607A96D005A67C2 /* CountryBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryBank.swift; sourceTree = "<group>"; };
-		25717E5B2607A978005A67C2 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		25717E602607ABA7005A67C2 /* NetworkingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
 		25717E692607AF8B005A67C2 /* BanksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksViewModel.swift; sourceTree = "<group>"; };
 		25717E6E2607B01F005A67C2 /* DetailBankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBankViewModel.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		250700C82607CCEE00639D6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				250700C92607CD0100639D6D /* AppSettings.swift */,
+				250701442608027700639D6D /* PersistenceService.swift */,
 				250700D12607CD5200639D6D /* BALocation.swift */,
 			);
 			path = Utils;
@@ -143,6 +151,9 @@
 		250700D62607CD9C00639D6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25E27425260685F500B3BC60 /* Assets.xcassets */,
+				25E27427260685F500B3BC60 /* LaunchScreen.storyboard */,
+				25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */,
 				250700D72607CDC300639D6D /* Countries.plist */,
 			);
 			path = Resources;
@@ -190,11 +201,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2507016A2608396300639D6D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				250702A8260905C300639D6D /* ImageEntity+CoreDataClass.swift */,
+				250702902608ADE500639D6D /* Bank+CoreDataClass.swift */,
+				250702922608ADE500639D6D /* BankGlobalGroup+CoreDataClass.swift */,
+				2507028F2608ADE500639D6D /* CountryBank+CoreDataClass.swift */,
+				250702912608ADE500639D6D /* ResponseData+CoreDataClass.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		25717E352607A89B005A67C2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				25717E3E2607A8E0005A67C2 /* EndPoint */,
 				25717E3F2607A8E6005A67C2 /* Manager */,
+				25717E3E2607A8E0005A67C2 /* EndPoint */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -218,11 +241,9 @@
 		25717E482607A94D005A67C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2507016A2608396300639D6D /* Entities */,
 				2507010E2607DB4200639D6D /* SectionModel */,
 				25717E492607A95A005A67C2 /* Bank.swift */,
-				25717E512607A964005A67C2 /* BankGlobalGroup.swift */,
-				25717E562607A96D005A67C2 /* CountryBank.swift */,
-				25717E5B2607A978005A67C2 /* ResponseData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,11 +318,7 @@
 				250700D62607CD9C00639D6D /* Resources */,
 				250700C82607CCEE00639D6D /* Utils */,
 				25E27419260685F300B3BC60 /* AppDelegate.swift */,
-				250700C92607CD0100639D6D /* AppSettings.swift */,
-				25E27425260685F500B3BC60 /* Assets.xcassets */,
 				25E2742A260685F500B3BC60 /* Info.plist */,
-				25E27427260685F500B3BC60 /* LaunchScreen.storyboard */,
-				25E27422260685F300B3BC60 /* BankApp.xcdatamodeld */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -464,6 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250702932608ADE500639D6D /* CountryBank+CoreDataClass.swift in Sources */,
+				250702942608ADE500639D6D /* Bank+CoreDataClass.swift in Sources */,
+				250702952608ADE500639D6D /* ResponseData+CoreDataClass.swift in Sources */,
+				250702962608ADE500639D6D /* BankGlobalGroup+CoreDataClass.swift in Sources */,
 				250701102607DB4F00639D6D /* SectionModels.swift in Sources */,
 				25E2746426068B8E00B3BC60 /* Coordinator.swift in Sources */,
 				25E2741E260685F300B3BC60 /* BanksViewController.swift in Sources */,
@@ -472,9 +493,8 @@
 				250700E12607CEDE00639D6D /* UIColor+Extension.swift in Sources */,
 				25E2746C26068BB300B3BC60 /* MainCoordinator.swift in Sources */,
 				25717E372607A8B1005A67C2 /* NetworkManager.swift in Sources */,
-				25717E522607A964005A67C2 /* BankGlobalGroup.swift in Sources */,
+				250702A9260905C300639D6D /* ImageEntity+CoreDataClass.swift in Sources */,
 				25717E6A2607AF8C005A67C2 /* BanksViewModel.swift in Sources */,
-				25717E5C2607A978005A67C2 /* ResponseData.swift in Sources */,
 				250701022607D9E900639D6D /* UIImageView+Extension.swift in Sources */,
 				250701212607DC9C00639D6D /* BankCell.swift in Sources */,
 				25E2741A260685F300B3BC60 /* AppDelegate.swift in Sources */,
@@ -484,7 +504,7 @@
 				25717E6F2607B01F005A67C2 /* DetailBankViewModel.swift in Sources */,
 				250701292607DCD900639D6D /* BankView.swift in Sources */,
 				2507012E2607DCEE00639D6D /* HeaderView.swift in Sources */,
-				25717E572607A96D005A67C2 /* CountryBank.swift in Sources */,
+				250701452608027700639D6D /* PersistenceService.swift in Sources */,
 				250700D22607CD5200639D6D /* BALocation.swift in Sources */,
 				25717E4A2607A95A005A67C2 /* Bank.swift in Sources */,
 				25717E442607A913005A67C2 /* BankEndPoint.swift in Sources */,
@@ -670,7 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.benharchache.BankApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -689,7 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.benharchache.BankApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

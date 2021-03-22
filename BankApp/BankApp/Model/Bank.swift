@@ -6,14 +6,16 @@
 //
 
 import Foundation
+import CoreData
 
-/* Codable Bank to Save into CoreData */
-struct Bank : Codable, Hashable  {
-    var id: Int?          /* Bank identifier */
-    var name: String?     /* Local bank name  */
-    var logo_url: String? /* Logo bank url */
-    var subName: String? /* sub bank name */
+/* Codable BankModel */
+struct BankModel : Codable, Hashable {
 
+    var id: Int?            /* Bank identifier */
+    var name: String?       /* Local bank name  */
+    var subName: String?    /* Logo bank url */
+    var logo_url: String?   /* Logo bank url */
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decodeIfPresent(Int.self, forKey: .id)
@@ -33,7 +35,7 @@ struct Bank : Codable, Hashable  {
         hasher.combine(identifier)
     }
     
-    static func == (lhs: Bank, rhs: Bank) -> Bool {
+    static func == (lhs: BankModel, rhs: BankModel) -> Bool {
         return lhs.identifier == rhs.identifier
     }
     
